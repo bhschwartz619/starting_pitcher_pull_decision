@@ -53,6 +53,45 @@ Raw Retrosheet event-level datasets are not included in this repository because 
 
 Users interested in reproducing the full analysis can obtain the raw data directly from Retrosheet and process the files using Chadwick Tools.
 
+## Project Pipeline
+
+The project is organized as a modular Python pipeline, with each script handling a specific stage of the analysis.
+
+```text
+src/
+├── load_combine_files.py       # Loads yearly Retrosheet CSV files and combines them into one dataset
+├── run_expectancy.py           # Builds run expectancy features using base-out states
+├── pitcher_features.py         # Engineers pitcher workload and fatigue-related features
+├── modeling.py                 # Trains the model used to estimate expected run outcomes
+├── decision_framework.py       # Compares model-based stay/pull recommendations against actual decisions
+├── manager_performance.py      # Summarizes manager and team-level alignment with the model
+└── visualizations.py           # Generates charts and tables used in the final analysis
+```
+
+### Pipeline Flow
+
+```text
+Raw Retrosheet event files
+        ↓
+load_combine_files.py
+        ↓
+run_expectancy.py
+        ↓
+pitcher_features.py
+        ↓
+modeling.py
+        ↓
+decision_framework.py
+        ↓
+manager_performance.py
+        ↓
+visualizations.py
+        ↓
+Final charts, tables, and presentation outputs
+```
+
+This structure separates data loading, feature engineering, modeling, decision evaluation, and visualization into distinct scripts, making the project easier to understand, maintain, and extend.
+
 ## Methods
 
 This project includes:
