@@ -1,8 +1,10 @@
-# Starting Pitcher Pull Decision Framework
+# Starting Pitcher Stay vs. Pull Decision Framework
 
 This project uses Retrosheet event-level MLB data from the 2022–2025 seasons to evaluate when managers should remove a starting pitcher from a game.
 
 The analysis builds a run expectancy framework, engineers pitcher fatigue and game-context features, and compares historical managerial decisions against model-based recommendations. The project combines baseball domain knowledge with predictive modeling and decision analysis to quantify the expected run cost of pitching decisions throughout a game.
+
+The analysis finds that managers tend to leave starters in games longer than the model recommends, particularly in late-inning and third-time-through-the-order situations.
 
 ---
 
@@ -129,7 +131,7 @@ The model estimates the expected run impact of each option and evaluates whether
 Key findings from the analysis include:
 
 - The model identified significantly larger decision costs during late innings and third-time-through-the-order situations.
-- Managers generally preferred leaving starters in games more often than the model recommended.
+- Managers generally left starters in games more often than the model recommended.
 - Team-level alignment with the model varied substantially, suggesting organizational differences in pitching management philosophy.
 - The framework quantified the expected run impact of pitching decisions rather than evaluating decisions solely based on game outcomes.
 
