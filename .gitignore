@@ -1,14 +1,21 @@
+# Python cache
 __pycache__/
 .ipynb_checkpoints/
 
+# Environment files
 .env
+
+# Large/compressed files
 *.zip
 
-data/raw/
-data/processed/*.csv
+# Data files (local only)
+data/
+*.csv
 
+# Operating system files
 .DS_Store
 Thumbs.db
 
+# R files
 .Rhistory
 .RData
