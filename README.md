@@ -33,3 +33,8 @@ src/        Python scripts
 data/       Local data folder, raw files not uploaded
 outputs/    Charts
 report/     Final presentation slides
+```
+
+## Final Presentation
+
+[View the final presentation](report/starting_pitcher_final_presentation.pdf)
