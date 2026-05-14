@@ -2,5 +2,3 @@ pandas
 numpy
 matplotlib
 scikit-learn
-statsmodels
-jupyter
