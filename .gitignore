@@ -9,3 +9,6 @@ data/processed/*.csv
 
 .DS_Store
 Thumbs.db
+
+.Rhistory
+.RData
