@@ -31,6 +31,5 @@ This project includes:
 ```text
 src/        Python scripts
 data/       Local data folder, raw files not uploaded
-outputs/    Charts and tables
-notebooks/  Exploratory analysis
-report/     Final writeup or presentation
+outputs/    Charts
+report/     Final presentation slides
