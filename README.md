@@ -158,7 +158,6 @@ Key findings from the analysis include:
 ```text
 src/                Python analysis scripts
 outputs/figures/    Generated visualizations
-outputs/tables/     Generated summary tables
 report/             Final presentation slides
 ```
 
